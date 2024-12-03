@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out the form below to register for our side.Fields with bold labels are required</p>
+    <form action="" method="post">
+        <label><b>Name</b>
+            <input type="text" name="name" id="givename">
+        </label><br><br>
+        <label><b>Gender</b></label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label><br><br>
+        <label for="os"><b>Operating System</b></label>
+        <select id="os">
+            <option>windows</option>
+            <option>linux</option>
+            <option>Macos</option>
+        </select><br><br>
+        <label>Toys</label>
+        
+        <input type="checkbox" id="digital" name="toys" value="Digital Camera">
+        <label for="digital">Digital CamerA</label>
+        <input type="checkbox" id="MP3 Player" name="toys" value="MP3 Player">
+        <label for="MP3 Player">MP3 Player</label>
+        <input type="checkbox" id="wireless" name="toys" value="Wireless LAN">
+        <label for="wireless">Wireless LAN</label>
+        <br><br>
+        Portrait
+        <input type="file" id="portrait" name="portrait"><br><br>
+        <label for="mini" style="display: block;" >Mini Biography</label>
+        <textarea name="mini" id="mini" rows="5" cols="30" ></textarea><br><br>
+        <button type="custom">register</button>
+
+
+    </form>
+</body>
+
+</html>
