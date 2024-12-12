@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        span{background-color: white; border: 1px solid black;}
+        #inner{
+            position: relative;
+            top: 10px;
+            left: 25px;
+        }
+        #outer{
+            position: relative;
+            top: 10px;
+        }
+        #picture{
+            position: relative;
+            width: 500px;
+        }
+        #picture img{
+            width: 500px;
+            margin: 0;
+            padding: 0;
+        }
+        #note1{
+            position: absolute;
+            border: 2px solid black;
+            width: 340px;
+            height: 300px;
+            top: 40px;
+            left: 40px;
+            text-align: right;
+        }
+        #bottom{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            border-top: 3px solid blue;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        The absence of romance in my history will, I fear detract somewhat <span id="inner">from its <span id="outer">interest</span></span> but if it be judged useful by those inquires who desires an exact knowledge of the past as as aid to the interpretaton of future
+    </p>
+    <h1>CLaude monet the bridge at argenteuil</h1>
+    <div id="picture">
+        <img src="monet.webp"  >
+        <div id="note1">
+            This is a boat
+        </div>
+
+    </div>
+    <div id="bottom">
+        <strong>The Tiny Diner</strong> 150 Water Street,Brooklyn, NY 11201
+        718.555.111 11-10 Tues-Sat
+    </div>
+</body>
+</html>
