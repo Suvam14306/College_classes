@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Window Location Object</h1>
+    <h2>The Origin Property</h2>
+    <p id="demo"></p>
+    <script>
+        let origin = window.location.origin;
+        document.getElementById("demo").innerHTML= origin;
+    </script>
+    <h1>The Window History Object</h1>
+    <h2>The history.length Property</h2>
+    <p id="demo1"></p>
+    <p>Since this is a new window frame,history.length will always return 1.</p>
+    <script>
+        let length = history.length;
+        document.getElementById("demo1").innerHTML = length;
+    </script>
+</body>
+</html>
