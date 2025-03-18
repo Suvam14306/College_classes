@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[name="email"]{color:#999;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <label >Email address: <input name="email" value="person@example.com" size="40"> <input id="emailFormSubmit" type="submit" disabled></label>
+    </form>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+            $("input[name='email']").focus(function(){
+                if($(this).val()=="person@example.com"){
+                    $(this).val("");
+                    $(this).css("color","black");
+                }
+            });
+            $("input[name='email']").blur(function(){
+                if($(this).val()==""){
+                    $(this).val("person@example.com");
+                    $(this).css("color","#999");
+                    $("#emailFormSubmit").attr("disabled", "disabled");
+                }
+                else{
+                    $("#emailFormSubmit").removeAttr("disabled");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

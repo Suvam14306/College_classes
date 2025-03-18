@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="editable"></ul>
+    <form  id="addElement">
+        <label>New list item: <input name="liContent" size="60" /></label>
+        <input type="submit" value="Add Item" />
+    </form>
+    <p> <a href="#" id="clearList">Clear List</a></p>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" >
+        $(function () {
+            $("#clearList").click(function (event) {
+                event.preventDefault();//remove default action of a tag
+                $("#editable").slideUp('slow',function(){
+                    $("#editable").empty();
+                    $("#editable").show();
+                })
+            });
+            $("#addElement").submit(function (event) {
+                event.preventDefault();
+               // $("#editable").append("<li>"+$("#addElement input[name='liContent']").val() + "</li>");
+               // $("#addElement input[name='liContent']").val(""); 
+                var content= "<li>"+$("#addElement input[name='liContent']").val() + "</li>";
+                $(content).hide().appendTo("#editable").fadeIn('slow').css("display","list-item");
+                $("#addElement input[name='liContent']").val("").focus();
+            })
+            $(document).on('click', "#editable li", function () {
+                $(this).fadeOut('slow',function(){$(this).remove() }) //to remove individual item
+            })
+        })
+    </script>
+</body>
+
+</html>
