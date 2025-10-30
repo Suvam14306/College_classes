@@ -100,7 +100,7 @@ switch(random)
     break;
 
 
-}*/
+}
 //4.5
 
 //let prize=Number(prompt("enter a number between 0-10"));
@@ -129,7 +129,24 @@ switch(prize)
         console.log(message+"no prize")
         break;
 }
+        
+let outarr = [];
+for(i=0;i<3;i++)
+{
+  outarr.push([]);
+  for(j=0;j<7;j++)
+  {
+   outarr[i].push([j])
+  }
+}
+console.log(outarr)
 
-
-
+let names=["chantal","john","maxime","bobbi","jair"]
+for(i=0;i<names.length;i++)
+{
+  if(names[i].startsWith('m'))
+  {
+    console.log(names[i]);
+  }
+}*/
 
