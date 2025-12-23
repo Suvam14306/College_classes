@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    
+  </style>
+
+   <script>
+    function create()
+    {
+      let p1=document.createElement("p");
+      p1.textContent="hello";
+      let h1=document.createElement("h1");
+      h1.textContent="javascript"
+      let btn=document.createElement("button");
+      btn.textContent="click here";
+      document.getElementById("container").appendChild(btn);
+      document.getElementById("conatiner").appendChild(h1);
+      document.getElementById("conatiner").appendChild(p);
+
+    }
+
+   </script>
+   <div id="conatiner"></div>
+   <button onclick="create()">click</button>
+</body>
+</html>

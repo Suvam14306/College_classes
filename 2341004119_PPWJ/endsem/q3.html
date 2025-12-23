@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .highlight{
+      color: white;
+      background-color: blue;
+      padding: 10px;
+    }
+  </style>
+
+  <script>
+    function addClass(){
+      let para = document.getElementById("text");
+      para.classList.add("highlight")
+    }
+
+    function removeClass(){
+      let para = document.getElementById("text");
+      para.classList.remove("highlight")
+    }
+  </script>
+
+  <p id="text">Hello World</p>
+  <button onclick="addClass()">add Class</button>
+  <button onclick="removeClass()">removeClass Class</button>
+</body>
+</html>

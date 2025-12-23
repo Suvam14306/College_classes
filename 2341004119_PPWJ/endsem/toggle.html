@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .square{
+      height: 100px;
+      width: 100px;
+      background-color: aquamarine;
+    }
+  </style>
+
+  <script>
+    function toggleCLass()
+    {
+      let d1 = document.getElementById("shape")
+      d1.classList.toggle("hide")
+    }
+  </script>
+  
+  <div id="shape" class="square"></div>
+  <button onclick="toggleCLass()">toggle class</button>
+
+</body>
+</html>
